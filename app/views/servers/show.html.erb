@@ -10,6 +10,10 @@
   <%= @server.ip %>
 </p>
 
+<p>
+	<b>Categories:</b>
+	<%= @server.categories %> 
+</p>
 
 
 <%= link_to('Edit', edit_server_path(@server), :class =>'btn btn-primary')%>

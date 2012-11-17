@@ -15,6 +15,7 @@ class ServersController < ApplicationController
   # GET /servers/1.json
   def show
     @server = Server.find(params[:id])
+    @categories = [Category.new(:name=>'Cock')]
 
     respond_to do |format|
       format.html # show.html.erb
@@ -36,6 +37,7 @@ class ServersController < ApplicationController
   # GET /servers/1/edit
   def edit
     @server = Server.find(params[:id])
+    @categories = [Category.new(:name => 'Cock')]
   end
 
   # POST /servers

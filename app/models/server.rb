@@ -1,5 +1,7 @@
 class Server < ActiveRecord::Base
-  attr_accessible :hostname, :ip
+
+  has_many :categories	
+  attr_accessible :hostname, :ip, :categories
 
   before_update :getIp
 

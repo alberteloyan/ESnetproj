@@ -20,4 +20,4 @@ seedFiles.each do |fileName|
 	end
 end
 
-
+Category.create_by_name('BWTCL')
